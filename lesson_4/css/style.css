@@ -1,0 +1,59 @@
+@import url("reset.css");
+/*-------------------------------------------------------*/
+div.content-title{
+    color: rgb(247, 0, 0);
+}
+a {
+    color: rgb(1, 92, 69);
+}
+li {
+    color: aqua;
+}
+.header-title{
+    color: yellowgreen;
+}
+.menu-link,
+h2,
+.content-item{
+    color: red;
+}
+.footer-item a {
+    color: rgb(2, 207, 139);
+}
+.content-text.critics-text{
+    color: red;
+}
+.content-text .text-orange{
+    color: orange;
+}
+.content-text * {
+    color: rgb(3, 185, 185);
+}
+.som-text ~ p {
+    color: blue;
+}
+.critics-text > p {
+    color: rgb(141, 2, 141);
+}
+.som-critics-text + p {
+    color: rgb(38, 11, 134);
+}
+[class*="-title"] {
+    color: red;
+}
+#som-text-id{
+    color: rgb(12, 231, 48);
+}
+p.som-text{
+    color: rgb(204, 58, 0);
+}
+.som-text {
+    color: blueviolet;
+}
+p {
+    color: rgb(5, 119, 119);
+}
+* {
+    color: brown;
+}
+
