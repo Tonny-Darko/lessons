@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url("fonts.css");
+/*-------------------------------------------------------*/
+@import url("reset.css");
+/*-------------------------------------------------------*/
+body {
+    font-family: "Inter", sans-serif;
+    color: #7D7D7D;
+    font-size: 18px;
+}
+/*-------------------------------------------------------*/
+.project:not(:last-child){
+    margin-bottom: 3.125rem;
+}
+.business-title,
+.busines-sub-title {
+    font-family: Poppins;
+    font-weight: 600;
+}
+.business-title {
+    color: #37393F;
+    font-size: 30px;
+    text-transform: capitalize;
+    line-height: 1.26; /* 38/30 */
+}
+.business-text,
+.information-text {
+    line-height: 1.44; /* 26/18 */
+}
+.busines-sub-title {
+    color: #6B77E5;
+    font-size: 20px;
+    line-height: 1.25; /* 25/20 */
+}
+.information-title {
+    color: #37393F;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 700;
+}
+.information-list,
+.information-numlist {
+    font-weight: 500;
+}
+/*-------------------------------------------------------*/
+.homework{
+    font-family: "Oswald", sans-serif;
+}
+.homework-title {
+    font-size: 60px;
+    color: #071abe;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 10px 5px rgba(83, 199, 83, 0.651),
+                    -20px 10px 8px rgba(134, 1, 1, 0.664),
+                    10px -30px 3px rgba(167, 6, 132, 0.664);
+    letter-spacing: 10px;
+    white-space: nowrap;
+}
+.homework-about {
+    font-weight: 600;
+    color: rgb(27, 25, 25);
+    font-size: 35px;
+    text-align: right;
+}
+.about-blue {
+    color: #071abe;
+    font-size: 40px;
+    word-spacing: 10px;
+    text-shadow: 4px 4px 2px rgba(156, 105, 105, 0.534),
+                    -7px -4px 3px rgba(141, 6, 107, 0.623);
+}
+.homework-career h2 {
+    color: rgb(226, 195, 59);
+    letter-spacing: 3px;
+    font-size: 40px;
+    text-decoration: line-through;
+}
+.career-dinamo-subtitle,
+.career-milan-subtitle {
+    text-align: center;
+    font-weight: 500;
+    color: #474747;
+    font-size: 28px;
+    line-height: 1.4;
+    letter-spacing: 4px;
+    text-shadow: 4px -8px 8px rgba(255, 0, 0, 0.534),
+                    7px 4px 3px rgba(13, 95, 189, 0.623);
+    text-decoration: underline;
+}
+.career-dinamo-text,
+.career-milan-text {
+    text-indent: 15px;
+    font-size: 20px;
+    color: rgb(100, 100, 3);
+    
+}
+.career-dinamo-text{
+    text-shadow: -10px -8px 8px rgba(8, 196, 102, 0.534),
+                    7px 3px 3px rgba(217, 255, 5, 0.623);
+}
+.career-milan-text {
+    text-shadow: 7px -2px 5px rgba(219, 87, 87, 0.733),
+                    3px 4px 3px rgba(167, 5, 231, 0.623);
+}
