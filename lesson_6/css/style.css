@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+/*-------------------------------------------------------*/
+@import url("reset.css");
+/*-------------------------------------------------------*/
+body {
+    font-family: "Inter", sans-serif;
+}
+/*-------------------------------------------------------*/
+.page-jewellery {
+    max-width: 1230px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0 15px 0;
+}
+.jewellery-about {
+    max-width: 563px;
+    display: inline-block;
+    margin-right: 38px;
+}
+.about-subtitle {
+    color: #D06B00;
+    font-size: 28px;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+.about-title {
+    color: #0E333D;
+    font-size: 59px;
+    font-family: DM Serif Text;
+    margin-bottom: 25px;
+    line-height: 1.45; /* 86/59 */
+    text-transform: capitalize;
+}
+.about-text {
+    color: #474747;
+    font-size: 20px;
+    line-height: 1.80; /* 36/20 */
+}
+.jewellery-image {
+    margin-right: 22px;
+}
+/*-------------------------------------------------------*/
+.page-consulting {
+    max-width: 745px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.consulting-img,
+.benefits-img {
+    max-width: 100%;
+}
+.consulting-img{
+    margin-bottom: 37px;
+}
+.benefits-img {
+    margin-right: 29px;
+}
+.consulting-about {
+    margin-bottom: 39px;
+}
+.consulting-title,
+.consulting-sub-title,
+.benefits-subtitle,
+.benefits-text {
+    font-family: "Poppins";
+}
+.consulting-title {
+    color: #37393F;
+    font-size: 30px;
+    text-transform: capitalize;
+    line-height: 1.26;
+    margin-bottom: 3px;
+}
+.consulting-text,
+.benefits-list {
+    color: #7D7D7D;
+    font-size: 18px;
+}
+.consulting-sub-title {
+    color: #6B77E5;
+    font-size: 20px;
+    line-height: 1.25;
+    margin-top: 42px;
+    margin-bottom: 12px;
+}
+.consulting-benefits {
+}
+.benefits-about {
+    max-width: 332px; 
+    display: inline-block;   
+}
+.benefits-subtitle {
+    color: #37393F;
+    font-size: 25px;
+    line-height: 1.24; /* 31/25 */
+    margin-bottom: 15px;
+}
+.benefits-text {
+    color: #40DDB6;
+    font-size: 20px;
+    line-height: 1.25; /* 25/20 */
+    margin-bottom: 21px;
+}
+.benefits-list li{
+    padding-left: 35px;
+    margin-bottom: 35px;
+}
+.header-text,
+.footer-text{
+    display: none;
+}
