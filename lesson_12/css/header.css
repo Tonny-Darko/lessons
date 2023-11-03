@@ -1,0 +1,100 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(30, 32, 151, 0.952);
+    z-index: 5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header--content {
+}
+.header__container {
+}
+.header__menu {
+}
+.menu {
+}
+.menu__item {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.menu__item:not(:last-child){
+    margin-right: 20px;
+}
+.menu__link {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+}
+.menu__link:hover {
+    text-decoration: underline;
+}
+.menu__item:hover .sub-menu,
+.sub-menu__item:hover .sub-menu-sub,
+.sub-menu-sub__item:hover .second-menu-sub{
+    visibility: visible;
+}
+.sub-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    color: black;
+    padding-top: 15px;
+    visibility: hidden;
+}
+.sub-menu__item {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 120px;
+    background-color: chocolate;
+}
+.sub-menu__link:hover {
+    background-color: rgb(161, 87, 34);
+}
+.sub-menu__link,
+.sub-menu-sub__link,
+.second-menu-sub__link {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+.sub-menu-sub {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    color: black;
+    padding-right: 15px;
+    visibility: hidden;
+}
+.sub-menu-sub__item {
+    width: 170px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgb(169, 226, 12);
+}
+.sub-menu-sub__link:hover {
+    background-color: rgb(128, 168, 16);
+}
+.second-menu-sub {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    color: black;
+    padding-right: 15px;
+    visibility: hidden;
+}
+.second-menu-sub__item {
+    width: 200px;
+    background-color: rgb(226, 133, 12);
+}
+.second-menu-sub__link:hover {
+    background-color: rgb(175, 109, 22);
+}
