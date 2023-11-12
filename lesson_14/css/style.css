@@ -18,114 +18,133 @@ body {
     padding: 0px 10px;
 }
 /*-------------------------------------------------------*/
-
-/*----------------------2D---------------------------------*/
+.page {
+}
 .page__practic {
 }
 .practic {
-    padding-top: 105px;
-    padding-bottom: 50px;
-    background: url(../img/01.webp) 0 0 repeat;
-    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 70px;
 }
 .practic__container {
-}
-.practic__title {
-    font-size: 50px;
-    padding: 30px;
-    background-color: #c4c4c4;
-    color: orangered;
-    text-align: center;
-}
-.title-item:not(:last-child) {
-    margin-bottom: 40px;
 }
 .practic__content {
 }
 .block,
-.block3d,
-.style3d {
+.key {
     width: 300px;
     height: 300px;
+    background-color: rgb(217, 236, 179);
     display: inline-block;
-    background-color: #c4c4c4;
+    position: relative;
 }
-.block--mb:not(:last-child){
-    margin-bottom: 100px;
-    margin-right: 100px;
-}
-.block p,
-.block3d p,
-.style3d p{
-    text-align: center;
-    font-size: 20px;
-    padding: 10px;
+.block--mb:not(:last-child) {
+    margin-bottom: 30px;
+    margin-right: 30px;
 }
 .block__item,
-.block3d__item,
-.style3d__item {
+.key__item {
     width: 300px;
     height: 300px;
+    background-color: olivedrab;
     display: inline-block;
-    background-color: orangered;
+}
+.block__item p,
+.key__item p{
+    position: absolute;
+    left: 70px;
+    top: 40%;
+    display: inline-block;
+    padding: 10px;
+    background-color: bisque;
 }
 .block:nth-child(1) .block__item{
-    transform: translate(20px, 10px);
+    transition-duration: 0.8s;
+}
+.block:nth-child(1):hover .block__item{
+    background-color: rgb(157, 230, 11);
 }
 .block:nth-child(2) .block__item{
-    transform: scale(0.5)
+    transition-duration: 0.6s;
+    transition-property: background-color;
+}
+.block:nth-child(2):hover .block__item{
+    background-color: rgb(226, 230, 11);
 }
 .block:nth-child(3) .block__item{
-    transform: rotate(277deg);
+    transition-duration: 0.6s;
+    transition-property: background-color;
+    transition-delay: 0.5s;
+}
+.block:nth-child(3):hover .block__item{
+    background-color: rgb(230, 190, 11);
 }
 .block:nth-child(4) .block__item{
-    transform: skew(5deg, -10deg);
+    transition-duration: 0.6s;
+    transition-property: background-color;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in;
+}
+.block:nth-child(4):hover .block__item{
+    background-color: rgb(230, 117, 11);
 }
 .block:nth-child(5) .block__item{
-    transform: matrix(0.43,-0.43,-0.03,1.00,19,50);
+    transition: background-color 0.3s linear 0.3s;
+}
+.block:nth-child(5):hover .block__item{
+    background-color: rgb(230, 44, 11);
 }
 .block:nth-child(6) .block__item{
-    transform: translate(10px, 20px) scale(0.7) rotate(-30deg) skew(-20deg);
+    transition: 
+        background-color 0.3s linear 0s,
+        width 0.3s linear 0.3s,
+        height 0.3s linear 0.6s;
 }
-.block:nth-child(7) .block__item{
-    transform: rotate(28deg);
-    transform-origin: 30px 100px;
+.block:nth-child(6):hover .block__item{
+    background-color: rgb(11, 230, 128);
+    width: 400px;
+    height: 400px;
 }
-/*--------------------------3D-----------------------------*/
-.practic3d__content {
+/*-------------------------------------------------------------------------*/
+.practic__title {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgb(142, 91, 146);
+    font-size: 35px;
+    text-transform: uppercase;
 }
-.block3d {
-    perspective: 1000px;
-    perspective-origin: center;
+.title--item {
+    margin-bottom: 30px;
 }
-.block3d__item {
-    
+/*-------------------------------------------------------------------------*/
+.key {
+    animation: action-left 10s linear infinite alternate;
 }
-.block3d:nth-child(1) .block3d__item {
-    transform: translate3d(20px, 15px, -80px);
+.key--mb {
 }
-.block3d:nth-child(2) .block3d__item {
-    transform: scale3D(0.5, 0.8, 2);
+.key__item {
+    animation: action 6s linear infinite alternate 0.5s;
 }
-.block3d:nth-child(3) .block3d__item {
-    transform: rotate3D(60, 26, 30, -45deg);
+@keyframes action {
+    0% {
+        transform: rotate(360deg);
+    }
+    50% {
+    }
+    100% {
+        background-color: orangered;
+    }
 }
-.block3d:nth-child(4) .block3d__item {
-    transform: translate3d(20px, 15px, -80px) rotate3d(60, 26, 30, -45deg) scale3D(0.5, 0.8, 2);
+@keyframes action-left {
+    0% {
+        left: 10%;
+    }
+    50% {
+    }
+    100% {
+        left: 70%;
+    }
 }
-.style3d {
-    perspective: 1000px;
-    perspective-origin: center;
-    transform-style: preserve-3d;
-}
-.style3d__item {
-}
-.style3d .style3d__item {
-    transform: rotate3D(60, 26, 30, -45deg);
-}
-/*-------------------------------------------------------*/
-/*-------------------------------------------------------*/
-/*-------------------------------------------------------*/
-/*-------------------------------------------------------*/
-/*-------------------------------------------------------*/
-/*-------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/

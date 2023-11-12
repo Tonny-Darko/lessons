@@ -1,5 +1,7 @@
 .page{
     position: relative;
+    overflow: clip;
+    min-height: 100vh;
 }
 .page__car {
 }
@@ -100,31 +102,26 @@
 .text__item:nth-child(1){
     left: 100px;
     top: -123px;
-    visibility: hidden;
-    transform: scale(0);
+    opacity: 0;
     animation: item-1 3s ease-in 4s;
 }
 .text__item:nth-child(2){
     left: -48px;
     top: 98px;
-    visibility: hidden;
-    transform: scale(0);
+    opacity: 0;
     animation: item-1 3s ease-in 5s;
 }
 .text__item:nth-child(3){
     left: -64px;
     top: -175px;
-    visibility: hidden;
-    transform: scale(0);
-    animation: item-1 20s linear 7s;
+    opacity: 0;
+    animation: item-1 10s linear 7s;
 }
 @keyframes item-1 {
     0% {
-        visibility: visible;
-        transform: scale(1);
+        opacity: 1;
     }
     100% {
-        
     }
 }
 /*-------------------------------------------------------------*/
@@ -195,7 +192,6 @@
     top: 300px;
 }
 .cloud-item__circl {
-    /* background-color: #000; */
     background: linear-gradient(173deg, rgba(14,0,255,1) 0%, rgba(54,54,215,1) 35%, rgba(0,168,255,1) 100%);
     border-radius: 50%;
     display: inline-block;
@@ -239,13 +235,13 @@
     position: absolute;
     left: 35px;
     top: -35px;
-    visibility: hidden;
+    opacity: 0;
     animation: car-text 10s linear 9s;
     border: 1px solid black;
 }
 @keyframes car-text {
     0% {
-        visibility: visible;
+        opacity: 1;
     }
     100%{
 

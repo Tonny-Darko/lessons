@@ -1,39 +1,23 @@
 .header {
-    background-color: rgba(255, 68, 0, 0.705);
+    background-color: rgba(255, 166, 0, 0.76);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 5;
-    padding: 20px;
-}
-.header__container {
-}
-.header__content {
-    padding: 10px;
-    text-align: center;
-    position: relative;
 }
 .header__link {
-    font-size: 40px;  
+    display: inline-block;
 }
-.header__link span {
-    position: relative;
+.header__link a{
+    padding: 20px 30px;
+    background-color: bisque;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+    font-size: 35px;
 }
-.header__link::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: orange;
-    transition: all 0.5s;
-    transform: skew(-20deg, 0);
-}
-.header__link:hover::before{
-    transform: skew(20deg, 0);
-}
-.header__link:hover {
-    text-decoration: underline;
+.header__link:hover a{
+    background-color: rgb(131, 240, 81);
+    cursor: pointer;
 }
