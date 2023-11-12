@@ -1,0 +1,23 @@
+.header {
+    background-color: rgba(255, 166, 0, 0.76);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.header__link {
+    display: inline-block;
+}
+.header__link a{
+    padding: 20px 30px;
+    background-color: bisque;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+    font-size: 35px;
+}
+.header__link:hover a{
+    background-color: rgb(131, 240, 81);
+    cursor: pointer;
+}
