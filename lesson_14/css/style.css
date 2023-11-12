@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:regular&display=swap");
+/*-------------------------------------------------------*/
+@import url("reset.css");
+/*-------------------------------------------------------*/
+@import url("header.css");
+@import url("footer.css");
+/*-------------------------------------------------------*/
+body {
+    font-family: "Rubik", sans-serif;
+}
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+[class*=__container] {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+/*-------------------------------------------------------*/
+
+/*----------------------2D---------------------------------*/
+.page__practic {
+}
+.practic {
+    padding-top: 105px;
+    padding-bottom: 50px;
+    background: url(../img/01.webp) 0 0 repeat;
+    background-attachment: fixed;
+}
+.practic__container {
+}
+.practic__title {
+    font-size: 50px;
+    padding: 30px;
+    background-color: #c4c4c4;
+    color: orangered;
+    text-align: center;
+}
+.title-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+.practic__content {
+}
+.block,
+.block3d,
+.style3d {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-color: #c4c4c4;
+}
+.block--mb:not(:last-child){
+    margin-bottom: 100px;
+    margin-right: 100px;
+}
+.block p,
+.block3d p,
+.style3d p{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+.block__item,
+.block3d__item,
+.style3d__item {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-color: orangered;
+}
+.block:nth-child(1) .block__item{
+    transform: translate(20px, 10px);
+}
+.block:nth-child(2) .block__item{
+    transform: scale(0.5)
+}
+.block:nth-child(3) .block__item{
+    transform: rotate(277deg);
+}
+.block:nth-child(4) .block__item{
+    transform: skew(5deg, -10deg);
+}
+.block:nth-child(5) .block__item{
+    transform: matrix(0.43,-0.43,-0.03,1.00,19,50);
+}
+.block:nth-child(6) .block__item{
+    transform: translate(10px, 20px) scale(0.7) rotate(-30deg) skew(-20deg);
+}
+.block:nth-child(7) .block__item{
+    transform: rotate(28deg);
+    transform-origin: 30px 100px;
+}
+/*--------------------------3D-----------------------------*/
+.practic3d__content {
+}
+.block3d {
+    perspective: 1000px;
+    perspective-origin: center;
+}
+.block3d__item {
+    
+}
+.block3d:nth-child(1) .block3d__item {
+    transform: translate3d(20px, 15px, -80px);
+}
+.block3d:nth-child(2) .block3d__item {
+    transform: scale3D(0.5, 0.8, 2);
+}
+.block3d:nth-child(3) .block3d__item {
+    transform: rotate3D(60, 26, 30, -45deg);
+}
+.block3d:nth-child(4) .block3d__item {
+    transform: translate3d(20px, 15px, -80px) rotate3d(60, 26, 30, -45deg) scale3D(0.5, 0.8, 2);
+}
+.style3d {
+    perspective: 1000px;
+    perspective-origin: center;
+    transform-style: preserve-3d;
+}
+.style3d__item {
+}
+.style3d .style3d__item {
+    transform: rotate3D(60, 26, 30, -45deg);
+}
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
