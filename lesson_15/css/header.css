@@ -1,0 +1,118 @@
+.header {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    background-color: white;
+}
+.header--fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+.header__container {
+}
+.header__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header__logo {
+}
+.header__logo img{
+    max-width: 100%;
+}
+.header__search {
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-right: 60px;
+    padding-left: 164px;
+    flex-wrap: wrap;
+}
+.search__button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #807D7E;
+    padding: 12px 48px;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.search__button::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/search.svg) 0 0 no-repeat;
+}
+.search__button:hover {
+    background-color: #e9e8e8;
+}
+.search__list {
+    color: #333333;
+}
+.search__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+.search__item::after {
+    content: "";
+    width: 10px;
+    height: 5px;
+    background: url(../img/arrow-header.svg) 0 0 no-repeat;
+    transition: transform 0.3s;
+}
+.search__item:hover {
+    cursor: pointer;
+}
+.search__item:hover::after {
+    transform: rotate(180deg);
+}
+.search__item:hover .search__sub-list{
+    visibility: visible;
+    cursor: pointer;
+}
+.search__sub-list {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    visibility: hidden;
+    border: 1px solid #8A33FD;
+    padding: 5px;
+    border-radius: 5px;
+    color: #333333;
+    background-color: white;
+}
+.search__sub-item {
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+.search__sub-item:hover {
+    background-color: #e9e8e8;
+    border-radius: 5px;
+}
+.search__sub-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.header__user {
+}
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 29px;
+    flex-wrap: wrap;
+}
+.user__button {
+    padding: 12px 48px;
+}
