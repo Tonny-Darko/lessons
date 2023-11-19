@@ -158,6 +158,7 @@ body {
 .wish-item {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .wish-item:not(:last-child) {
     margin-bottom: 60px;
