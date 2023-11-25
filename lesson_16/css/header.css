@@ -1,0 +1,15 @@
+.header {
+    background-color: #e6e6e6c4;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    border-bottom: 3px solid #8A33FD;
+}
+.header__container {
+}
+.header__tilte {
+    font-size: 35px;
+    color: #8A33FD;
+    font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon_viking.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__tilte">Lesson 16</h1>
+            </div>
+        </header>
+        <main id="up" class="page">
+            <section class="page__request request">
+                <div class="request__container">
+                    <div class="request__text request-text">
+                        <h3 class="request-text__label">Contact Us</h3>
+                        <h2 class="request-text__title">Request A Call Back !</h2>
+                    </div>
+                    <form action="#" id="call-back" enctype="multipart/form-data" method="GET" class="request__form form">
+                        <div class="form__body form__body--mb">
+                            <div class="form__line">
+                                <input type="text" placeholder="Your Name" class="form__input" autocomplete="off" name="name">
+                            </div>
+                            <div class="form__line">
+                                <input type="email" placeholder="Email Address" class="form__input" autocomplete="off" name="mail">
+                            </div>
+                            <div class="form__line">
+                                <input type="tel" placeholder="Phone Number" class="form__input" autocomplete="off" name="phone">
+                            </div>
+                            <div class="form__line">
+                                <input type="text" placeholder="Subject" class="form__input" autocomplete="off" name="Subject">
+                            </div>
+                            <div class="form__line form__line--width">
+                                <textarea placeholder="Message..." class="form__textarea" name="message"></textarea>
+                            </div>
+                        </div>
+                        <button form="call-back" type="submit" class="form__btn">Submit</button>
+                    </form>
+                </div>
+            </section>
+            <section class="page__address address">
+                <div class="address__container-two">
+                    <h2 class="address__title">My Info</h2>
+                    <h3 class="address__label">Add Address</h3>
+                    <form id="address" class="address__form address-form" action="#" enctype="multipart/form-data" method="get">
+                        <div class="address-form__body address-body">
+                            <div class="address-body__item">
+                                <label for="name" class="address-body__label">
+                                    First Name*
+                                </label>
+                                <input id="name" required type="text" placeholder="First Name" class="address-body__input" autocomplete="off" name="name">
+                            </div>
+                            <div class="address-body__item">
+                                <label for="last-name" class="address-body__label">
+                                    Last Name*
+                                </label>
+                                <input id="last-name" required type="text" placeholder="Last Name" class="address-body__input" autocomplete="off" name="last-name">
+                            </div>
+                            <div class="address-body__item">
+                                <label for="country" class="address-body__label">
+                                    Country / Region*
+                                </label>
+                                <input id="country" required type="text" placeholder="Country / Region" class="address-body__input" autocomplete="off" name="country">
+                            </div>
+                            <div class="address-body__item">
+                                <label for="company" class="address-body__label">
+                                    Company Name
+                                </label>
+                                <input id="company" type="text" placeholder="Company (optional)" class="address-body__input" autocomplete="off" name="company">
+                            </div>
+                            <div class="address-body__item">
+                                <label for="street-add" class="address-body__label">
+                                    Street Address*
+                                </label>
+                                <input id="street-add" required type="text" placeholder="House number and street name" class="address-body__input" autocomplete="off" name="street-add">
+                            </div>
+                            <div class="address-body__item">
+                                <label for="apt" class="address-body__label">
+                                    Apt, suite, unit
+                                </label>
+                                <input id="apt" type="text" placeholder="apartment, suite, unit, etc. (optional)" class="address-body__input" autocomplete="off" name="apt">
+                            </div>
+                            <div class="address-body__item">
+                                <label for="city" class="address-body__label">
+                                    City*
+                                </label>
+                                <input id="city" required type="text" placeholder="Town / City" class="address-body__input" autocomplete="off" name="city">
+                            </div>
+                            <div class="address-body__item">
+                                <label for="states" class="address-body__label">
+                                    State*
+                                </label>
+                                <select class="address-body__option" required name="list" id="states">
+                                    <option value>State</option>
+                                    <option value>Ukraine</option>
+                                    <option value>England</option>
+                                    <option value>USA</option>
+                                </select>
+                            </div>
+                            <div class="address-body__item">
+                                <label for="phone" class="address-body__label">
+                                    Phone*
+                                </label>
+                                <input id="phone" type="tel" required placeholder="Phone" class="address-body__input" autocomplete="off" name="phone">
+                            </div>
+                            <div class="address-body__item">
+                                <label for="postal-code" class="address-body__label">
+                                    Postal Code*
+                                </label>
+                                <input id="postal-code" class="address-body__input" required minlength="2" maxlength="10" autocomplete="off" placeholder="Postal Code" name="postal-code" type="text">
+                            </div>
+                            <div class="address-body__item address-body__item--area">
+                                <label for="delivery-message" class="address-body__label">
+                                    Delivery Instruction
+                                </label>
+                                <textarea class="address-body__area" required placeholder="Delivery Instruction" name="delivery-message" id="delivery-message"></textarea>
+                            </div>
+                            <div class="address-body__item">
+                                <div class="address-body__checkbox checkbox">
+                                    <input class="checkbox__input" id="shipping" name="shipping-address" type="checkbox">
+                                    <label class="checkbox__label" for="shipping">Set as default shipping address</label>
+                                </div>
+                                <div class="address-body__checkbox checkbox">
+                                    <input class="checkbox__input" id="billing" name="billing-address" type="checkbox">
+                                    <label class="checkbox__label" for="billing">Set as default billing address</label>
+                                </div>                           
+                            </div>
+                        </div>
+                        <div class="address-form__button form-button">
+                            <button form="address" type="submit" class="form-button__submit button">Save</button>
+                            <button form="address" type="reset" class="form-button__reset button">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="page__chek chek">
+                <div class="chek__container-three">
+                    <h2 class="chek__title">My Info</h2>
+                    <h3 class="chek__label">Add Address</h3>
+                    <form id="chek" class="chek__form chek__form--mb address-form" action="#" method="get" enctype="multipart/form-data">
+                        <div class="address-form__body address-body address-body--width">
+                            <div class="address-body__item address-body__item--width">
+                                <label for="first-name" class="address-body__label">
+                                    First Name*
+                                </label>
+                                <input id="first-name" required type="text" placeholder="First Name" class="address-body__input" autocomplete="off" name="name">
+                            </div>
+                            <div class="address-body__item address-body__item--width">
+                                <label for="sub-name" class="address-body__label">
+                                    Last Name*
+                                </label>
+                                <input id="sub-name" required type="text" placeholder="Last Name" class="address-body__input" autocomplete="off" name="last-name">
+                            </div>
+                            <div class="address-body__item address-body__item--width">
+                                <label for="region" class="address-body__label">
+                                    Country / Region*
+                                </label>
+                                <input id="region" required type="text" placeholder="Country / Region" class="address-body__input" autocomplete="off" name="country">
+                            </div>
+                            <div class="address-body__item address-body__item--width">
+                                <label for="company-name" class="address-body__label">
+                                    Company Name
+                                </label>
+                                <input id="company-name" type="text" placeholder="Company (optional)" class="address-body__input" autocomplete="off" name="company">
+                            </div>
+                            <div class="address-body__item address-body__item--width">
+                                <label for="street-address" class="address-body__label">
+                                    Street Address*
+                                </label>
+                                <input id="street-address" required type="text" placeholder="House number and street name" class="address-body__input" autocomplete="off" name="street-add">
+                            </div>
+                            <div class="address-body__item address-body__item--width">
+                                <label for="unit" class="address-body__label">
+                                    Apt, suite, unit
+                                </label>
+                                <input id="unit" type="text" placeholder="apartment, suite, unit, etc. (optional)" class="address-body__input" autocomplete="off" name="apt">
+                            </div>
+                            <div class="address-body__item address-row address-body__item--width">
+                                <div class="address-row__item">
+                                    <label for="citys" class="address-row__label">
+                                        City*
+                                    </label>
+                                    <input id="citys" required type="text" placeholder="Town / City" class="address-row__input" autocomplete="off" name="city">
+                                </div>
+                                <div class="address-row__item">
+                                    <label for="state" class="address-row__label">
+                                        State*
+                                    </label>
+                                    <select class="address-row__option" required name="list" id="state">
+                                        <option value>State</option>
+                                        <option value>Kyiv</option>
+                                        <option value>Zaporizhzhia</option>
+                                        <option value>Dnipro</option>
+                                    </select>
+                                </div>
+                                <div class="address-row__item">
+                                    <label for="postal" class="address-row__label">
+                                        Postal Code*
+                                    </label>
+                                    <input id="postal" class="address-row__input" required minlength="2" maxlength="10" autocomplete="off" placeholder="Postal Code" name="postal-code" type="text">
+                                </div>
+                            </div>
+                            <div class="address-body__item address-body__item--width address-body__item--phone">
+                                <label for="phones" class="address-body__label">
+                                    Phone*
+                                </label>
+                                <input id="phones" type="tel" required placeholder="Phone" class="address-body__input" autocomplete="off" name="phone">
+                            </div>
+                        </div>
+                        <button form="chek" type="submit" class="address-form__submit address-form__submit--mb button">Continue to delivery</button>
+                        <div class="address-form__checkbox checkbox">
+                            <input class="checkbox__input" id="save" name="save-info" type="checkbox">
+                            <label class="checkbox__label" for="save">Save my information for a faster checkout</label>
+                        </div>
+                    </form>
+                    <div class="chek__block chek-block">
+                        <div class="chek-block__items chek-item">
+                                <div class="chek-item__content chek-item__content--mb">
+                                    <h3 class="chek__label chek__label--mb">Shipping Address</h3>
+                                    <div class="chek-item__text">
+                                        <p>Select the address that matches your card or payment method.</p>
+                                    </div>
+                                </div>
+                                <form class="chek-item__form pay-form" action="#" method="get" enctype="multipart/form-data">
+                                    <div class="pay-form__body pay-body">
+                                        <div class="pay-body__radio pay-radio">
+                                            <input class="pay-radio__input" checked id="same" name="same" value="billing-address" type="radio">
+                                            <label class="pay-radio__label" for="same">Same as Billing address</label>
+                                        </div>
+                                        <div class="pay-body__radio pay-radio">
+                                            <input class="pay-radio__input" id="use" name="same" value="shipping-address" type="radio">
+                                            <label class="pay-radio__label" for="use">Use a different shipping address</label>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="chek-block__items chek-item">
+                                <h3 class="chek__label chek__label--mb">Shipping Address</h3>
+                                <div class="chek-item__body pay-body">
+                                    <div class="pay-body__content">
+                                        <h3 class="pay-body__label">Arrives by Monday, June 7</h3>
+                                    </div>
+                                    <div class="pay-body__content">
+                                        <div class="pay-body__label pay-text">
+                                            <h3 class="pay-text__label">
+                                                Delivery Charges
+                                            </h3>
+                                            <div class="pay-text__price">$5.00</div>
+                                        </div>
+                                        <div class="pay-body__text">
+                                            <p>
+                                                Additional fess may apply
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="chek-block__items chek-item">
+                                <h2 class="chek__title chek__title--payment">Payment Method</h2>
+                                <h3 class="chek__label chek__label--payment">All transactions are secure and encrypted.</h3>
+                                <form id="pay-item" class="chek-item__form pay-form" action="#" method="get" enctype="multipart/form-data">
+                                    <div class="pay-form__body pay-body pay-form__body--pd">
+                                        <div class="pay-body__radio pay-radio">
+                                            <input class="pay-radio__input" checked id="card" name="payment" value="payment-method" type="radio">
+                                            <label class="pay-radio__label radio-label" for="card">
+                                                Credit Card
+                                            </label>
+                                            <div class="pay-radio__text pay-radio__text--mb">
+                                                <p>
+                                                    We accept all major credit cards.
+                                                </p>
+                                            </div>
+                                            <div class="pay-radio__payment pay-payment">
+                                                <img src="img/payment/01.svg" alt="Google Pay" class="pay-payment__img">
+                                                <img src="img/payment/02.svg" alt="VISA" class="pay-payment__img">
+                                                <img src="img/payment/03.svg" alt="PayPal" class="pay-payment__img">
+                                                <img src="img/payment/04.svg" alt="Pay Pass" class="pay-payment__img">
+                                            </div>
+                                            <div class="pay-radio__subform">
+                                                <div class="subform">
+                                                    <div class="subform__item">
+                                                        <input required type="text" placeholder="Card number" class="subform__input" autocomplete="off" name="card-number">
+                                                    </div>
+                                                    <div class="subform__item">
+                                                        <input required type="text" placeholder="Name of card" class="subform__input" autocomplete="off" name="name">
+                                                    </div>
+                                                    <div class="subform__item">
+                                                        <input required type="text" placeholder="Expiration date (MM/YY)" class="subform__input" autocomplete="off" name="date">
+                                                    </div>
+                                                    <div class="subform__item">
+                                                        <input required type="password" placeholder="Security Code" class="subform__input subform__input--eye" autocomplete="off" name="code">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pay-body__radio pay-radio">
+                                            <input class="pay-radio__input" id="cash" name="payment" value="payment-method" type="radio">
+                                            <label class="pay-radio__label radio-label" for="cash">
+                                                Cash on delivery
+                                            </label>
+                                            <div class="pay-radio__text">
+                                                <p>
+                                                    Pay with cash upon delivery.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="pay-body__radio pay-radio">
+                                            <input class="pay-radio__input" id="paypol" name="payment" value="payment-method" type="radio">
+                                            <label class="pay-radio__label" for="paypol">Paypol</label>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <button form="pay-item" type="submit" class="chek-block__pay-button button">Pay Now</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <a href="#up" class="footer__link">UP</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
